@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family: "Segoe UI";
+            margin: 0 20px;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        div{
+            background-color: grey;
+            border: 3px solid black;
+       
+        }
+        .title{
+            border: 1px solid black;
+            width: 100px;
+            height: 25px;
+            float: right;
+            text-align: center;
+            font-weight: bold;
+        }
+        p{
+            clear: right;
+            padding: 0px 10px;
+            font-weight: bold;
+            
+        }
+/*************************LARGE DEVICE*******************************************/
+        @media (min-width:992px){
+            #box1{
+                width: 32.3%;
+                float: left;
+                margin-right: 1.5%;
 
+            }
+            #box2{
+                width: 32.3%;
+                float: left;
+                margin-right: 1.5%;
+
+            }
+            #box3{
+                width: 32.3%;
+                float: left;
+            }
+          
+        }
+/***************************MEDIUM DEVICE**************************************/
+        @media (min-width: 769px) and (max-width: 991px){
+            #box1{
+                width: 49%;
+                float: left;
+                margin-right: 2%;
+                margin-bottom: 15px;
+
+            }
+            #box2{
+                width: 49%;
+                float: left;
+                margin-bottom: 20px;
+
+            }
+            #box3{
+                width: 100%;
+                float: left;
+            }
+        }
+/************************SMALL DEVICE*******************************************/
+        @media(max-width: 767px){
+            #box1{
+                width: 100%;
+                float: left;
+                margin-bottom: 10px;
+
+            }
+            #box2{
+                width: 100%;
+                float: left;
+                margin-bottom: 10px;
+
+            }
+            #box3{
+                width: 100%;
+                float: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Menu</h1>
+    
+    <div id="box1">
+        <section class="title" style="background-color: pink;">Chicken</section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="box2">
+        <section class="title" style="background-color: rgb(185, 62, 62); color:white;">Beef</section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="box3">
+        <section class="title" style="background-color: rgb(212, 190, 129)">Sushi</section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  
+</body>
+</html>
